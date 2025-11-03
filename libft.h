@@ -6,7 +6,7 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:48:11 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/11/01 00:02:30 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:38:24 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,4 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);
 
-#endif
+# endif

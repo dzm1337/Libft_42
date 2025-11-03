@@ -6,7 +6,7 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 16:00:01 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/10/31 23:29:50 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:27:56 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t		total_size;
 	char		*cbyte;
 
-	if ((nmemb == 0 || size == 0) || nmemb > SIZE_MAX / size)
-		return (NULL);
 	total_size = nmemb * size;
+	if ((nmemb != 0 && total_size / nmemb != size))
+		return (NULL);
 	mem = (void *)malloc(total_size);
 	if (!mem)
 		return (NULL);

@@ -6,13 +6,13 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 20:54:34 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/10/15 21:00:23 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:12:52 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "stdlib.h"
 
-int	ft_isascii(unsigned char c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

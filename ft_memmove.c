@@ -6,14 +6,16 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 17:31:45 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/10/31 23:18:09 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:19:45 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-static void	ft_move(unsigned char *d, unsigned const char *s, size_t n)
+static void	ft_move(unsigned char *d, const char *s, size_t n)
 {
-	if (d < (unsigned char *)s)
+	size_t		i;
+
+	if (d < (const char *)s)
 	{
 		i = 0;
 		while (i < n)
@@ -37,7 +39,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
 	const char			*s;
-	size_t				i;
 
 	d = (unsigned char *)dest;
 	s = (const char *)src;

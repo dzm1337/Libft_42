@@ -6,7 +6,7 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 18:56:01 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/11/03 16:05:36 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 19:19:11 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ char	**ft_split(const char *s, char c)
 	size_t		j;
 
 	if (!s)
-		return (NULL);
+		return (0);
 	res = (char **)malloc((ft_countwords(s, c) + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);

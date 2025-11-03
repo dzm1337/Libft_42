@@ -6,7 +6,7 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 16:52:55 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/11/01 00:01:19 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:30:02 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	sub_str = (char *)malloc(sizeof(char) * len + 1);
 	if (!sub_str)
 		return (NULL);
-	i = 0;
 	ft_strlcpy(sub_str, s + start, len + 1);
 	return (sub_str);
 }

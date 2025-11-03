@@ -6,7 +6,7 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 21:35:45 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/10/31 22:07:22 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:31:11 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
+	size_t		i;
+
 	if (!s || !f)
 		return ;
 	i = 0;

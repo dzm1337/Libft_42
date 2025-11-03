@@ -6,7 +6,7 @@
 /*   By: dde-paul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 21:23:35 by dde-paul          #+#    #+#             */
-/*   Updated: 2025/10/31 23:46:41 by dde-paul         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:30:24 by dde-paul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	i = ft_strlen(s);
-	new_str = (char *)malloc(sizeof(char) * (len + 1));
+	new_str = (char *)malloc(sizeof(char) * (i + 1));
 	if (!new_str)
 		return (NULL);
 	i = 0;
